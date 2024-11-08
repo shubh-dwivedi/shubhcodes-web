@@ -304,19 +304,32 @@ footer {
   background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
 
-/* .logos:hover .logos-slide {
+.logos:hover .logos-slide {
   animation-play-state: paused;
-} */
+}
 
 .logos-slide {
   display: inline-block;
+  /* display: flex; */
+  /* flex-direction: row;
+  justify-content: space-around;
+  vertical-align: middle; */
   animation: 35s slide infinite linear;
 }
 
 .logos-slide img {
   height: 80px;
-  margin: 0 40px;
-  margin-bottom: 0;
+  width: 80px;
+  margin: 10px 40px;
+  vertical-align: middle;
+}
+
+.img-1:hover , .img-2:hover , .img-3:hover , .img-4:hover , .img-5:hover , .img-6:hover , .img-7:hover , .img-8:hover ,
+.img-9:hover , .img-10:hover , .img-11:hover , .img-12:hover , .img-13:hover , .img-14:hover , .img-15:hover , .img-16:hover ,
+.img-17:hover , .img-18:hover , .img-19:hover , .img-20:hover , .img-21:hover , .img-22:hover , .img-23:hover , .img-24:hover {
+  height: 90px;
+  width: 90px;
+  margin: 0 35px;
 }
 
 /* .hide-1,.hide-2,.hide-3,.hide-4,.hide-5 {
