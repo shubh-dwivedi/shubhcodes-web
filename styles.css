@@ -164,7 +164,8 @@ a.nostyle:link, a.nostyle:visited {
 .hero-heading {
     font-size: 2rem;
     color: var(--dark-gray);
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
+    padding-top: 0px;
     text-align: center;
     margin: auto;
     margin-bottom: 1rem;
@@ -278,7 +279,7 @@ footer {
 
 .logos {
   overflow: hidden;
-  padding: 60px 0;
+  padding: 40px 0;
   background: white;
   white-space: nowrap;
   position: relative;
@@ -310,10 +311,6 @@ footer {
 
 .logos-slide {
   display: inline-block;
-  /* display: flex; */
-  /* flex-direction: row;
-  justify-content: space-around;
-  vertical-align: middle; */
   animation: 35s slide infinite linear;
 }
 
@@ -331,15 +328,6 @@ footer {
   width: 100px;
   margin: 0 35px;
 }
-
-/* .hide-1,.hide-2,.hide-3,.hide-4,.hide-5 {
-  display: none;
-} */
-    
-/* .linkedin:hover + .hide-1 {
-  display: block;
-  color: #fff;
-} */
 
 
 @media screen and (max-width: 768px) {
@@ -433,6 +421,14 @@ footer {
 
     .logos-slide img {
         height: 50px;
-        margin: 0 15px;
+        margin: 5px 15px;
+    }
+
+    .img-1:hover , .img-2:hover , .img-3:hover , .img-4:hover , .img-5:hover , .img-6:hover , .img-7:hover , .img-8:hover ,
+    .img-9:hover , .img-10:hover , .img-11:hover , .img-12:hover , .img-13:hover , .img-14:hover , .img-15:hover , .img-16:hover ,
+    .img-17:hover , .img-18:hover , .img-19:hover , .img-20:hover , .img-21:hover , .img-22:hover , .img-23:hover , .img-24:hover {
+        height: 60px;
+        width: 60px;
+        margin: 0 12px;
     }
 }
