@@ -318,8 +318,8 @@ footer {
 }
 
 .logos-slide img {
-  height: 80px;
-  width: 80px;
+  height: 90px;
+  width: 90px;
   margin: 10px 40px;
   vertical-align: middle;
 }
@@ -327,8 +327,8 @@ footer {
 .img-1:hover , .img-2:hover , .img-3:hover , .img-4:hover , .img-5:hover , .img-6:hover , .img-7:hover , .img-8:hover ,
 .img-9:hover , .img-10:hover , .img-11:hover , .img-12:hover , .img-13:hover , .img-14:hover , .img-15:hover , .img-16:hover ,
 .img-17:hover , .img-18:hover , .img-19:hover , .img-20:hover , .img-21:hover , .img-22:hover , .img-23:hover , .img-24:hover {
-  height: 90px;
-  width: 90px;
+  height: 100px;
+  width: 100px;
   margin: 0 35px;
 }
 
