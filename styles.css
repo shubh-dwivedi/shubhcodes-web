@@ -17,6 +17,7 @@ hr {
 }
 
 :root {
+    /* --primary-color: #00C0FF; */
     --primary-color: #00C0FF;
     --secondary-color: #009dffef;
     --dark-gray: #6B7280;
@@ -93,12 +94,23 @@ li {
     color: white;
     padding: 1rem;
     border-bottom-left-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .navigation .link {
     color: white;
     text-align: right;
     list-style-position: inside;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+}
+
+.navigation .nav-pills {
+    text-align: right;
 }
 
 .navigation .nav-brand {
@@ -108,15 +120,48 @@ li {
     border: 3px solid #F3F4F6;
     border-radius: 2px;
     width: fit-content;
+    height: fit-content;
     padding: 0.2rem;
 }
 
-.navigation .nav-pills {
+.nav-trigger {
+    display: none;
+    height: 50px;
+}
+
+.nav-trigger img {
+    width: 35px;
+    height: 35px;
+}
+
+.navigation-mobile {
+    display: none;
+    background-color: white;
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    border-left: 2px solid var(--primary-color);
+    border-right: 2px solid var(--primary-color);
+}
+
+.navigation-mobile .list-item-block{
     text-align: right;
 }
 
-.navigation .link-active {
-    font-weight: bold;
+.navigation-mobile .link {
+    color: black;
+    text-align: right;
+    font-weight: 550;
+    list-style-position: inside;
+}
+
+.navigation-mobile .link-active {
+    color: var(--primary-color);
+}
+
+.nav-close-button {
+    display: none;
 }
 
 a.nostyle:link, a.nostyle:visited {
@@ -135,7 +180,7 @@ a.nostyle:link, a.nostyle:visited {
 }
 
 .hero-projects {
-    padding: 5rem 1rem 1rem 1rem;
+    padding: 2.5rem 1rem 1rem 1rem;
 }
 
 .hero-tagline .tagline{
@@ -164,7 +209,15 @@ a.nostyle:link, a.nostyle:visited {
 .hero-heading {
     font-size: 2rem;
     color: var(--dark-gray);
-    /* padding-top: 2rem; */
+    padding-top: 2rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.projects-heading {
+    font-size: 2rem;
+    color: var(--dark-gray);
     padding-top: 0px;
     text-align: center;
     margin: auto;
@@ -222,7 +275,7 @@ a.nostyle:link, a.nostyle:visited {
 /** footer **/
 footer {
     background-color: var(--primary-color);
-    padding: 1rem 1rem 0 1rem;
+    padding: 1rem 2rem 0 2rem;
     color: white;
     text-align: center;
     border-top-right-radius: 1rem;
@@ -242,7 +295,7 @@ footer {
 
 .footer .footer-bottom {
     font-size: 1rem;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .footer ul {
@@ -250,21 +303,44 @@ footer {
 }
 
 .footer img {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     margin: auto;
 }
 
 .footer .list-item-inline {
     display: inline-block;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     width: fit-content;
     height: fit-content;
 }
 
-.footer .list-item-inline img {
-    height: 100%;
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.foo-sec-1 {
+    width: 50%;
+}
+
+.foo-sec-2 {
+    width: 30%;
+}
+
+.foo-sec-3 {
+    width: 20%;
+    text-align: start;
+}
+
+.social-links .list-non-bullet .link figure{
+    margin-left: 0;
+}
+
+.footer figure{
+    margin: 0.5rem 0rem;
 }
 
 @keyframes slide {
@@ -289,7 +365,7 @@ footer {
 .logos:after {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 200px;
   height: 100%;
   content: "";
   z-index: 2;
@@ -331,6 +407,14 @@ footer {
 
 
 @media screen and (max-width: 768px) {
+    .navigation .list-non-bullet {
+        display: none;
+    }
+
+    .nav-trigger {
+        display: block;
+    }
+
     .container-center {
         max-width: 100%;
         width: auto;
@@ -345,6 +429,16 @@ footer {
         font-size: 300%;
     }
 
+    .social-heading {
+        margin-bottom: 0.2rem;
+        margin-top: 0.5rem;
+    }
+
+    hr {
+        margin-top: 0.5rem;
+        margin-bottom: 0.8rem;
+    }
+
     .list-item-block {
         display: block;
         margin: 1rem auto;
@@ -353,6 +447,8 @@ footer {
 
     .list-non-bullet {
         padding-inline-start: 0;
+        margin-top: 0;
+        margin-bottom: 0.2rem;
     }
 
     .hero {
@@ -383,12 +479,14 @@ footer {
     }
 
     .footer img {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 1.75rem;
+        height: 1.75rem;
     }
 
     .footer figure{
-        margin: 1rem 0.5rem;
+        margin: 0.5rem 0.2rem;
+        margin-top: 0rem;
+        margin-left: 0rem;
     }
 
     .footer .footer-header {
@@ -396,12 +494,30 @@ footer {
     }
 
     .footer .footer-bottom {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         margin-bottom: 10px;
     }
 
     .footer figcaption {
         display: none;
+    }
+
+    .footer-section {
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+
+    .foo-sec-1 {
+        width: 100%;
+    }
+    
+    .foo-sec-2 {
+        width: 0;
+    }
+    
+    .foo-sec-3 {
+        width: 100%;
+        text-align: left;
     }
 
     .extra-buttons a {
@@ -411,7 +527,7 @@ footer {
     }
 
     .logos {
-        padding: 30px 0;
+        padding: 15px 0;
       }
 
     .logos:before,
@@ -419,16 +535,23 @@ footer {
         width: 75px;
     }
 
+    .logos:hover .logos-slide {
+        animation-play-state: running;
+    }
+
     .logos-slide img {
-        height: 50px;
-        margin: 5px 15px;
+        height: 60px;
+        margin: 2px 2px;
+        margin-left: 0;
     }
 
     .img-1:hover , .img-2:hover , .img-3:hover , .img-4:hover , .img-5:hover , .img-6:hover , .img-7:hover , .img-8:hover ,
     .img-9:hover , .img-10:hover , .img-11:hover , .img-12:hover , .img-13:hover , .img-14:hover , .img-15:hover , .img-16:hover ,
     .img-17:hover , .img-18:hover , .img-19:hover , .img-20:hover , .img-21:hover , .img-22:hover , .img-23:hover , .img-24:hover {
-        height: 60px;
+        /* height: 60px;
         width: 60px;
-        margin: 0 12px;
+        margin: 0 12px; */
+        height: 50px;
+        margin: 2px 2px;
     }
 }

@@ -16,8 +16,7 @@
 </head>
 
 <body>
-
-    <nav class="navigation container">
+    <nav class="navigation container" id="main-navigation">
         <div class="nav-brand"><a class="nostyle" href="index.html" style="text-decoration: none;">Shubh_Codes</a></div>
         <ul class="list-non-bullet nav-pills">
             <li class="list-item-inline list-item-block">
@@ -32,7 +31,26 @@
                 <a class="link" href="/blogs.html">Blogs</a>
             </li>
         </ul>
+        <div class="nav-trigger" id="nav-trigger-btn">
+            <img src="\images\navigation-button.svg"  alt="navigation button" id="open-nav-btn">
+            <img src="\images\close-navigation.svg"  alt="navigation close button" class="nav-close-button" id="close-nav-btn">
+        </div>
     </nav>
+    <div class="navigation-mobile" id="navigation-mobile">
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline list-item-block">
+                <a class="link link-active" href="/">Home</a>
+            </li>
+
+            <li class="list-item-inline list-item-block">
+                <a class="link" href="/projects.html">Projects</a>
+            </li>
+
+            <li class="list-item-inline list-item-block">
+                <a class="link" href="/blogs.html">Blogs</a>
+            </li>
+        </ul>
+    </div>
 
     <header class="hero hero-index">
         <div class="hero-tagline"><h2 class="tagline">Learn to Develop.<br>Develop to Learn.</p></div>
@@ -47,14 +65,14 @@
     <section class="section section-ow">
         <div class="container container-center">
             <h1>Technologies</h1>
-            <p>I'm familiar with HTML5, CSS3, Javascript, Git, ReactJS, NodeJS and Web hosting</p>
+            <p>I have hands-on experience in developing Websites and Web Applications from scratch using ReactJS, HTML5, CSS3, Javascript, NodeJS, Git and Github</p>
         </div>
     </section>
 
     <section class="section">
         <div class="container container-center">
             <h1>Projects</h1>
-            <p>I like to showcase my work, and hence you can checkout my Projects(Hosted Online) and its source code</p>
+            <p>I like to showcase my work, and hence you can checkout my Projects(Live) and its source code here</p>
             <a class="link-primary link" href="projects.html">See Projects</a>
         </div>
     </section>
@@ -62,55 +80,68 @@
     <section class="section section-ow">
         <div class="container container-center">
             <h1>Blogs</h1>
-            <p>I am also working on some Technical and Non-Technical Blogs. You can checkout those blogs from link below</p>
+            <p>I am also working on some Technical and Non-Technical Blogs. You can checkout those blogs here</p>
             <a class="link-secondary link" href="blogs.html">Read blogs</a>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="footer-header">
-            Social
+        <div>
+            <div class="footer-section">
+                <div style="text-align: start;" class="foo-sec-1">
+                    <h2>SHUBHAM DWIVEDI</h2>
+                    <p>A Full Stack Developer building the Frontend and Backend of Websites and Web Applications that leads to the success of the overall product</p>
+                </div>
+                <div class="foo-sec-2"></div>
+                <div class="foo-sec-3">
+                    <h2 class="social-heading">SOCIAL</h2>
+            
+                    <ul class="social-links list-non-bullet">
+                        <li class="list-item-inline">
+                            <a class="link" href="https://www.linkedin.com/in/shubham-dwivedi-655622140/"
+                            target="_blank">
+                                <figure style="margin-right: 0.5rem;"><img src="images/linkedin-white-logo.svg" alt="Linkedin.com">
+                                </figure>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item-inline">
+                            <a class="link" href="https://github.com/shubh-dwivedi" target="_blank">
+                                <figure style="margin: 0.5rem;"><img src="images/github-white-logo.svg" alt="Github.com">
+                                </figure>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item-inline">
+                            <a class="link" href="https://x.com/Shubh_Baalak" target="_blank"><figure style="margin: 0.5rem;; align-items: center;"><img src="images/x-social-media-white-icon.svg" alt="x.com">
+                            </figure></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <ul class="social-links list-non-bullet">
-            <li class="list-item-inline">
-                <a class="link" href="https://www.linkedin.com/in/shubham-dwivedi-655622140/"
-                target="_blank"><figure><img src="images/linkedin-white-logo.svg" alt="Linkedin.com" class="linkedin">
-                    <figcaption class="hide-1">LinkedIn</figcaption>
-                </figure></a>
-            </li>
-            
-            <li class="list-item-inline">
-                <a class="link" href="https://github.com/shubh-dwivedi" target="_blank"><figure><img src="images/github-white-logo.svg" alt="Github.com">
-                    <figcaption class="hide-2">GitHub</figcaption>
-                </figure></a>
-            </li>
-            
-            <li class="list-item-inline">
-                <a class="link" href="https://x.com/Shubh_Baalak" target="_blank"><figure><img src="images/x-social-media-white-icon.svg" alt="x.com" style="height: 2.5rem;">
-                    <figcaption class="hide-3">X (Twitter)</figcaption>
-                </figure></a>
-            </li>
-
-            <li class="list-item-inline">
-                <a class="link" href="https://www.sololearn.com/en/profile/1358843" target="_blank"><figure><img src="images/sololearn-white.svg" alt="
-                    Sololearn">
-                    <figcaption class="hide-4">Sololearn</figcaption>
-                </figure></a>
-            </li>
-
-            <!-- <li class="list-item-inline">
-                <a class="link" href="https://dev.to/shubham_codes" target="_blank"><figure><img src="images/dev-to.svg" alt="Dev.to">
-                    <figcaption class="hide-5">Dev</figcaption>
-                </figure></a>
-            </li> -->
-        </ul>
+        <hr style="height:1px;border-width:0;color:white;background-color:white">
 
         <div class="footer-bottom">
             &#169 Copyright 2024. Made by <a class="link" href="/"><u>Shubham Dwivedi</u></a>
         </div>
     </footer>
 
+    <script>
+        let btn = document.getElementById('nav-trigger-btn');
+        btn.addEventListener('click', ()=> {
+            let nav = document.getElementById('navigation-mobile');
+            let main_nav = document.getElementById('main-navigation');
+            nav.style.display = nav.style.display == 'none' || !nav.style.display ? 'block' : 'none';
+            main_nav.style.borderBottomLeftRadius = nav.style.display == 'none' || !nav.style.display ? '1rem' : '0rem';
+            
+            let open_nav = document.getElementById('open-nav-btn');
+            let close_nav = document.getElementById('close-nav-btn');
+            open_nav.style.display = nav.style.display == 'none' || !nav.style.display ? 'block' : 'none';
+            close_nav.style.display = nav.style.display == 'none' || !nav.style.display ? 'none' : 'block';
+        })
+    </script>
 </body>
 
 </html>
