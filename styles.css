@@ -22,6 +22,7 @@ hr {
     --secondary-color: #009dffef;
     --dark-gray: #6B7280;
     --light-gray: #F3F4F6;
+    --font-black: #333;
 }
 
 /** containers **/
@@ -150,7 +151,7 @@ li {
 }
 
 .navigation-mobile .link {
-    color: black;
+    color: var(--font-black);
     text-align: right;
     font-weight: 550;
     list-style-position: inside;
@@ -335,6 +336,14 @@ footer {
     text-align: start;
 }
 
+.social-heading {
+    margin-bottom: 0.5rem;
+}
+
+.foo-sec-3 ul {
+    margin-top: 0.2rem;
+}
+
 .social-links .list-non-bullet .link figure{
     margin-left: 0;
 }
@@ -404,7 +413,6 @@ footer {
   width: 100px;
   margin: 0 35px;
 }
-
 
 @media screen and (max-width: 768px) {
     .navigation .list-non-bullet {
