@@ -219,7 +219,16 @@ a.nostyle:link, a.nostyle:visited {
 .projects-heading {
     font-size: 2rem;
     color: var(--dark-gray);
-    padding-top: 0px;
+    padding-top: 1rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.blogs-heading {
+    font-size: 2rem;
+    color: var(--dark-gray);
+    padding-top: 1rem;
     text-align: center;
     margin: auto;
     margin-bottom: 1rem;
@@ -460,11 +469,21 @@ footer {
     }
 
     .hero {
-        padding: 2rem 1rem 1rem 1rem;
+        padding: 1rem;
+    }
+
+    .blogs-head {
+        padding-top: 1.5rem;
+        padding-bottom: 0;
     }
 
     .hero-projects .hero-image{
         max-width:100%;
+    }
+
+    .blogs-heading {
+        padding-top: 0rem;
+        margin-bottom: 0rem;
     }
 
     .section {
