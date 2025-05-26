@@ -475,8 +475,16 @@ footer {
         flex-direction: column;
     }
 
+    .hero-tagline {
+        text-align: center;
+    }
+
     .hero-tagline .tagline {
-        font-size: 300%;
+        font-size: 120%;
+    }
+
+    .hero-heading {
+        font-size: 1.25rem;
     }
 
     .social-heading {
@@ -541,7 +549,7 @@ footer {
     }
 
     .showcase-list img {
-        width: 90%;
+        width: 100%;
         margin: 0px auto;
     }
 
@@ -620,5 +628,9 @@ footer {
         margin: 0 12px; */
         height: 50px;
         margin: 2px 2px;
+    }
+
+    .project-heading {
+        font-size: 1.2rem;
     }
 }
