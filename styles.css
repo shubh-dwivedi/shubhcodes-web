@@ -246,6 +246,14 @@ a.nostyle:link, a.nostyle:visited {
     text-align: center;
 }
 
+.project-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-bottom: 0px;
+}
+
 .section p {
     padding-bottom: 1rem;
 }
@@ -272,14 +280,25 @@ a.nostyle:link, a.nostyle:visited {
 
 .showcase-list {
   padding: 1rem 1rem;
-  padding-bottom: 2.5rem;
+  /* padding-bottom: 2.5rem; */
   border-radius: 1rem;
-  text-align: center;
+  text-align: start;
   margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
 }
 
-.showcase-list p {
+/* .showcase-list p {
     padding-bottom: 0.5rem;
+} */
+
+.showcase-list img {
+    width: 300px;
+    border-radius: 10px;
+    outline: 2px solid var(--light-gray);
 }
 
 /** footer **/
@@ -423,6 +442,20 @@ footer {
   margin: 0 35px;
 }
 
+.project-image-container {
+    display: flex;
+    align-items: center;
+}
+
+.project-data-container  {
+    padding-top: 10px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
 @media screen and (max-width: 768px) {
     .navigation .list-non-bullet {
         display: none;
@@ -495,14 +528,21 @@ footer {
     }
 
     .showcase-list{
-        padding: 2rem 0.5rem;
+        /* padding: 2rem 0.5rem; */
+        padding: 1rem 1rem;
         margin: auto;
+        flex-direction: column;
     }
 
     .showcase-list a{
         display: block;
         margin: auto;
         margin-bottom: 10px;
+    }
+
+    .showcase-list img {
+        width: 90%;
+        margin: 0px auto;
     }
 
     .footer img {
@@ -530,7 +570,7 @@ footer {
     }
 
     .footer-section {
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: start;
     }
 
@@ -544,7 +584,7 @@ footer {
     
     .foo-sec-3 {
         width: 100%;
-        text-align: left;
+        text-align: center;
     }
 
     .extra-buttons a {
