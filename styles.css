@@ -47,16 +47,22 @@ hr {
     background-color: var(--primary-color);
     color: white;
     border-radius: 50rem;
-    margin: 1rem auto;
-    max-width: fit-content;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+    /* max-width: fit-content; */
+    gap: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .link-secondary {
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
     border-radius: 50rem;
-    margin: 2rem 1rem;
-    max-width: fit-content;
+    margin: 0rem 0.5rem 0.5rem 0.5rem;
+    /* max-width: fit-content; */
+    gap: 5px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -452,8 +458,47 @@ footer {
     align-self: flex-start;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: start;
+}
+
+.project-data-container p  {
+    padding: 0px 10px;
+    /* margin-block-start: 10px; */
+}
+
+.project-details p {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding: 10px;
+    /* padding-bottom: 0px; */
+}
+
+.project-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+.project-links a {
+    margin-left: 10px;
+}
+
+.project-links img {
+    height: 20px;
+    width: fit-content;
+    outline: none;
+    margin: auto 0;
+}
+
+.project-heading-container {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -542,9 +587,17 @@ footer {
         flex-direction: column;
     }
 
-    .showcase-list a{
-        display: block;
+    .showcase-list .link-primary{
+        display: flex;
         margin: auto;
+        margin-bottom: 10px;
+    }
+    
+    .showcase-list .link-secondary{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 60%;
         margin-bottom: 10px;
     }
 
@@ -632,5 +685,20 @@ footer {
 
     .project-heading {
         font-size: 1.2rem;
+    }
+
+    .project-links {
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 5px;
+    }
+
+    .project-links a {
+        font-size: 1.2rem;
+    }
+
+    .project-links img {
+        width: 15%;
+        margin: auto 5px;
     }
 }
