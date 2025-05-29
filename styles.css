@@ -47,7 +47,7 @@ hr {
     background-color: var(--primary-color);
     color: white;
     border-radius: 50rem;
-    margin: 0.5rem;
+    /* margin: 0.5rem; */
     /* max-width: fit-content; */
     gap: 5px;
     display: flex;
@@ -58,7 +58,8 @@ hr {
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
     border-radius: 50rem;
-    margin: 0.5rem;
+    margin-left: 15px;
+    /* margin: 0.5rem; */
     /* max-width: fit-content; */
     gap: 5px;
     display: flex;
@@ -293,7 +294,7 @@ a.nostyle:link, a.nostyle:visited {
 
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
   gap: 20px;
 }
 
@@ -454,7 +455,8 @@ footer {
 }
 
 .project-data-container  {
-    padding-top: 10px;
+    padding: 10px;
+    padding-bottom: 0px;
     align-self: flex-start;
     display: flex;
     flex-direction: column;
@@ -462,15 +464,10 @@ footer {
     align-items: start;
 }
 
-.project-data-container p  {
-    padding: 0px 10px;
-    /* margin-block-start: 10px; */
-}
-
 .project-details p {
     margin-block-start: 0px;
     margin-block-end: 0px;
-    padding: 10px;
+    padding: 10px 5px;
     /* padding-bottom: 0px; */
 }
 
@@ -479,11 +476,8 @@ footer {
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    gap: 5px;
-}
-
-.project-links a {
-    margin-left: 10px;
+    margin-top: 5px;
+    /* gap: 5px; */
 }
 
 .project-links img {
@@ -499,6 +493,16 @@ footer {
     justify-content: space-between; 
     align-items: center; 
     width: 100%;
+}
+
+.extended-link-primary {
+    width: fit-content;
+}
+
+.extended-link-secondary {
+    width: fit-content;
+    justify-content: center;
+    margin-left: 15px;
 }
 
 @media screen and (max-width: 768px) {
@@ -589,16 +593,20 @@ footer {
 
     .showcase-list .link-primary{
         display: flex;
+        justify-content: center;
         margin: auto;
+        width: 80%;
         margin-bottom: 10px;
+        font-size: 1.2rem;
     }
     
     .showcase-list .link-secondary{
         display: flex;
         justify-content: center;
         margin: auto;
-        width: 60%;
+        width: 80%;
         margin-bottom: 10px;
+        font-size: 1.2rem;
     }
 
     .showcase-list img {
@@ -683,22 +691,36 @@ footer {
         margin: 2px 2px;
     }
 
+    .project-heading-container {
+        justify-content: center;
+    }
+
     .project-heading {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .project-links {
         flex-direction: column;
-        margin-top: 20px;
+        margin-top: 10px;
         gap: 5px;
-    }
-
-    .project-links a {
-        font-size: 1.2rem;
     }
 
     .project-links img {
         width: 15%;
         margin: auto 5px;
+    }
+
+    .extended-link-primary {
+        width: 75%;
+    }
+
+    .extended-link-secondary {
+        width: 75%;
+        justify-content: center;
+        margin-left: 15px;
+    }
+
+    .project-details p {
+        padding: 10px 0px;
     }
 }
